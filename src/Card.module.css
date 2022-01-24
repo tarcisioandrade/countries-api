@@ -1,0 +1,70 @@
+.container {
+  margin-top: 3rem;
+}
+
+.btnBack {
+  background: var(--White) url(./Assets/svg/arrow-back-outline.svg) no-repeat
+    16px center;
+  background-size: 22px;
+  padding: 0.8rem 1rem 0.8rem 2.5rem;
+  min-width: 6rem;
+  border: none;
+  box-shadow: 0 0 9px 0 #00000033;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+.containerCard {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+.boxImg {
+  max-width: 30rem;
+}
+.boxImg img {
+  height: 22rem;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.title {
+  margin-bottom: 1.5rem;
+}
+
+.ul {
+  columns: 2;
+}
+.ul li {
+  line-height: 2;
+}
+
+:global(.dark) .btnBack {
+  background-color: var(--dark-blue-dark-mode-elements);
+  color: var(--White);
+}
+
+@media (max-width: 60rem) {
+  .containerCard {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  justify-content: center;
+
+  }
+  .btnBack {
+    background-position: 10px center;
+    background-size: 20px;
+  }
+  .boxImg img {
+    height: 15rem;
+  }
+  .ul {
+    columns: 1;
+  }
+  .ul li {
+    line-height: 3;
+  }
+  .ul li:nth-child(6) {
+    margin-top: 1rem;
+  }
+}

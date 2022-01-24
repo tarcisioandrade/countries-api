@@ -1,0 +1,30 @@
+.btn {
+  background: var(--White) url(./Assets/svg/arrow-up-outline.svg);
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.315);
+  animation: animaUp 5s infinite ease-in-out;
+}
+
+@keyframes animaUp {
+  0%,
+  50%,
+  100% {
+    transform: translateY(0px);
+  }
+  25%,
+  75% {
+    transform: translateY(10px);
+  }
+}
+
+:global(.dark) .btn {
+  background: var(--dark-blue-dark-mode-elements)
+    url(./Assets/svg/arrow-up-outline-dark.svg);
+}

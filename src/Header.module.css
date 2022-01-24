@@ -1,0 +1,48 @@
+.header {
+  background-color: var(--White);
+  box-shadow: 0px 1px 8px 0px #0000002e;
+  padding: 1rem 0;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.2rem;
+}
+.boxDarkMode {
+  cursor: pointer;
+}
+.boxDarkMode p {
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 0.833rem;
+}
+
+.boxDarkMode p::before {
+  content: "";
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 3px;
+  width: 15px;
+  height: 15px;
+  background: url(./Assets/svg/moon-outline.svg);
+  vertical-align: middle;
+}
+
+:global(.dark) .header {
+  background-color: var(--dark-blue-dark-mode-elements);
+}
+
+:global(.dark) .boxDarkMode p::before {
+  background: url(./Assets/svg/moon-outline-dark.svg);
+}
+
+@media (max-width: 45rem) {
+  .header {
+    padding: 2rem 0;
+  }
+}

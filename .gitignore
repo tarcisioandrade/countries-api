@@ -10,6 +10,8 @@
 
 # production
 /build
+/.vscode
+/src/Assets/design
 
 # misc
 .DS_Store

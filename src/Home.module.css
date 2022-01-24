@@ -1,0 +1,108 @@
+.headerHome {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  position: relative;
+}
+
+input,
+select {
+  padding: 1rem;
+  border: none;
+  box-shadow: 0 0 8px 1px #00000025;
+  font-size: 0.694rem;
+  border-radius: 4px;
+  background-color: var(--White);
+  color: var(--Black);
+}
+select {
+  min-width: 10rem;
+  cursor: pointer;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+input {
+  min-width: 25rem;
+  background: url(./Assets/svg/search-outline.svg) 15px center no-repeat;
+  padding-left: 3rem;
+  background-size: 20px;
+}
+
+.boxCards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+  margin-top: 3rem;
+  background-color: var(--White);
+}
+.card {
+  box-shadow: 0 0 6px 2px #00000012;
+  border-radius: 4px;
+}
+
+.boxImg img {
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.boxInfo {
+  margin-top: 1rem;
+  padding: 1rem 2rem 2rem 2rem;
+}
+
+.cardName {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.info {
+  font-size: 0.694rem;
+  line-height: 1.7;
+}
+
+:global(.dark) input,
+:global(.dark) select {
+  background-color: var(--dark-blue-dark-mode-elements);
+  color: var(--White);
+}
+
+:global(.dark) .boxCards {
+  background-color: var(--very-dark-blue-dark-mode-background);
+}
+
+:global(.dark) .card {
+  background-color: var(--dark-blue-dark-mode-elements);
+  color: var(--White);
+}
+
+@media (max-width: 45rem) {
+  .headerHome {
+    flex-direction: column;
+  }
+  input {
+    min-width: initial;
+  }
+  select {
+    max-width: 50vw;
+    margin-top: 3rem;
+  }
+  .boxCards {
+    grid-template-columns: 1fr;
+    padding: 0 1.5rem;
+  }
+  .boxImg img {
+    height: 15rem;
+  }
+  .cardName {
+    font-size: 1.1rem;
+  }
+  .info {
+    font-size: 0.765rem;
+    line-height: 2;
+  }
+}
