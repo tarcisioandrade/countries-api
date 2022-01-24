@@ -10,7 +10,7 @@ select {
   padding: 1rem;
   border: none;
   box-shadow: 0 0 8px 1px #00000025;
-  font-size: 0.694rem;
+  font-size: 0.833rem;
   border-radius: 4px;
   background-color: var(--White);
   color: var(--Black);
@@ -27,7 +27,8 @@ select:focus {
 
 input {
   min-width: 25rem;
-  background: url(./Assets/svg/search-outline.svg) 15px center no-repeat;
+  background: var(--White) url(./Assets/svg/search-outline.svg) 15px center
+    no-repeat;
   padding-left: 3rem;
   background-size: 20px;
 }
@@ -37,11 +38,11 @@ input {
   grid-template-columns: repeat(4, 1fr);
   gap: 5rem;
   margin-top: 3rem;
-  background-color: var(--White);
 }
 .card {
   box-shadow: 0 0 6px 2px #00000012;
   border-radius: 4px;
+  background-color: var(--White);
 }
 
 .boxImg img {
@@ -84,6 +85,11 @@ input {
   .headerHome {
     flex-direction: column;
   }
+  input,
+  select {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
   input {
     min-width: initial;
   }
@@ -102,7 +108,7 @@ input {
     font-size: 1.1rem;
   }
   .info {
-    font-size: 0.765rem;
+    font-size: 0.833rem;
     line-height: 2;
   }
 }
