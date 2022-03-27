@@ -1,4 +1,4 @@
-<a href"https://countrieswolrd.netlify.app/">Countries API</a>
+<a href="https://countrieswolrd.netlify.app/">Countries API</a>
 
 Projeto do FrontEndMentor para praticar o uso do ReactJS e consumo de APIs.
 
